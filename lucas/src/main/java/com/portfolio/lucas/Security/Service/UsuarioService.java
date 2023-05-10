@@ -6,7 +6,7 @@ package com.portfolio.lucas.Security.Service;
 
 import com.portfolio.lucas.Security.Entity.Usuario;
 import com.portfolio.lucas.Security.Repository.IUsuarioRepository;
-import jakarta.transaction.Transactional;
+import javax.transaction.Transactional;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

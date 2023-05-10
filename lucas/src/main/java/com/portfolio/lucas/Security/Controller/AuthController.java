@@ -13,7 +13,7 @@ import com.portfolio.lucas.Security.Enums.RolNombre;
 import com.portfolio.lucas.Security.Service.RolService;
 import com.portfolio.lucas.Security.Service.UsuarioService;
 import com.portfolio.lucas.Security.jwt.Provider;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import java.util.HashSet;
 import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
