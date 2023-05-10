@@ -31,13 +31,12 @@ public class ImpPersonaService implements IPersonaService{
     }
 
     @Override
-    public void deletePersona(Long id) {
-    int idInt = Math.toIntExact(id);
-    ipersonaRepository.deleteById(idInt);
+    public void deletePersona(int id) {
+    ipersonaRepository.deleteById(id);
 }
 
     @Override
-    public Persona findPersona(Long id) {
+    public Persona findPersona(int id) {
         int idInt = Math.toIntExact(id);
         Persona persona= ipersonaRepository.findById(idInt).orElse(null);
         return persona;
