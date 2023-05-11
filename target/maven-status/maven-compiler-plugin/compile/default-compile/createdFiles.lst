@@ -1,9 +1,7 @@
 com\portfolio\lucas\Security\Repository\IUsuarioRepository.class
-com\portfolio\lucas\Entity\Educacion.class
 com\portfolio\lucas\Security\Entity\UsuarioPrincipal.class
 com\portfolio\lucas\Entity\Experiencia.class
 com\portfolio\lucas\Security\jwt\Provider.class
-com\portfolio\lucas\Dto\dtoEducacion.class
 com\portfolio\lucas\Security\jwt\EntryPoint.class
 com\portfolio\lucas\Security\jwt\TokenFilter.class
 com\portfolio\lucas\Security\Controller\AuthController.class
@@ -15,7 +13,6 @@ com\portfolio\lucas\Service\SExperiencia.class
 com\portfolio\lucas\Controller\PersonaController.class
 com\portfolio\lucas\Security\Service\UsuarioService.class
 com\portfolio\lucas\WebConfig.class
-com\portfolio\lucas\Repository\REducacion.class
 com\portfolio\lucas\Security\Entity\Rol.class
 com\portfolio\lucas\Repository\RExperiencia.class
 com\portfolio\lucas\Dto\dtoExperiencia.class
@@ -32,5 +29,3 @@ com\portfolio\lucas\Security\Repository\IRolRepository.class
 com\portfolio\lucas\Controller\CExperiencia.class
 com\portfolio\lucas\Security\Dto\NuevoUsuario.class
 com\portfolio\lucas\Service\ImpPersonaService.class
-com\portfolio\lucas\Service\SEducacion.class
-com\portfolio\lucas\Controller\CEducacion.class
