@@ -26,34 +26,34 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 //@RequestMapping("/personas")
-@CrossOrigin(origins = {"https://lucas-latessa-portfolio.web.app/","http://localhost:4200"})
+@CrossOrigin(origins = {"https://lucas-latessa-portfolio.web.app","http://localhost:4200"})
 public class PersonaController {
     @Autowired
     IPersonaService ipersonaService;
     
-    @GetMapping("personas/traer")
+    @GetMapping("/personas/traer")
     public List<Persona> getPersona(){
         return ipersonaService.getPersona();
     }
-    @GetMapping("personas/traer/perfil")
+    @GetMapping("/personas/traer/perfil")
     public Persona findPersona(){
         return ipersonaService.findPersona(1);
     }
     @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping("personas/crear")
+    @PostMapping("/personas/crear")
     public String createpersona(@RequestBody Persona persona){
         ipersonaService.savePersona(persona);
         return "Persona creada con éxito";        
     }
     @PreAuthorize("hasRole('ADMIN')")
-    @DeleteMapping("personas/borrar/{id}")
+    @DeleteMapping("/personas/borrar/{id}")
     public String delete(@PathVariable int id){
         ipersonaService.deletePersona(id);
         return "Persona eliminada con éxito";
     }
     
     @PreAuthorize("hasRole('ADMIN')")
-    @PutMapping("personas/editar/{id}")
+    @PutMapping("/personas/editar/{id}")
     public String delete(@PathVariable int id,
             @RequestParam("nombre") String nuevoNombre,
             @RequestParam("apellido") String nuevoApellido,
