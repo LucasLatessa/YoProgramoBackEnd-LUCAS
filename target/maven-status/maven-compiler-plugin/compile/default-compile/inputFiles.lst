@@ -1,3 +1,4 @@
+C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Controller\CEducacion.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Dto\dtoExperiencia.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\MainSecurity.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Dto\JwtDto.java
@@ -23,9 +24,13 @@ C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfo
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Enums\RolNombre.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Controller\PersonaController.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Entity\Rol.java
+C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Entity\Educacion.java
+C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Service\Seducacion.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\jwt\Provider.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Interface\IPersonaService.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Controller\Mensaje.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Service\UsuarioService.java
+C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Dto\dtoEducacion.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Entity\UsuarioPrincipal.java
+C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Repository\REducacion.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Service\ImpPersonaService.java
