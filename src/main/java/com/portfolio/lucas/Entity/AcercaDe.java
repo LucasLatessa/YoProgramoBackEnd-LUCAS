@@ -14,7 +14,8 @@ import javax.persistence.Id;
  * @author lucas
  */
 @Entity
-public class AcercaDe {@Id
+public class AcercaDe {
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String descripcion;
