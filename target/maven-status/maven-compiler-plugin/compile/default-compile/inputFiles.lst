@@ -1,20 +1,16 @@
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\MainSecurity.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Service\ImpExperienciaS.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Service\UserDetailsImp.java
-C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Controller\AcercaDeCont.java
-C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Entity\AcercaDe.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\jwt\TokenFilter.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Service\ImpEducacionS.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\LucasApplication.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Repository\IUsuarioRepo.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Entity\Experiencia.java
-C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Service\ImpAcercaDeS.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Repository\IPersonaRepo.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Entity\Usuario.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Controller\PersonaCont.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Service\RolService.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\WebConfig.java
-C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Repository\IAcercaDeRepo.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Dto\NuevoUsuario.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Controller\ExperienciaCont.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\jwt\EntryPoint.java
@@ -22,7 +18,6 @@ C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfo
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Dto\JwtData.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Dto\PersonaData.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Entity\Persona.java
-C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Interface\IAcercaDeS.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Dto\LoginUsuario.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Enums\RolNombre.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Repository\IExperienciaRepo.java
@@ -33,7 +28,6 @@ C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfo
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Interface\IPersonaService.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Controller\Mensaje.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Controller\EducacionCont.java
-C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Dto\AcercaDeData.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Controller\AuthCont.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Security\Service\UsuarioService.java
 C:\Users\lucas\Documents\GitHub\YoProgramoBackEnd-LUCAS\src\main\java\com\portfolio\lucas\Dto\EducacionData.java
