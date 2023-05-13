@@ -20,6 +20,7 @@ com\portfolio\lucas\Security\Service\UsuarioService.class
 com\portfolio\lucas\WebConfig.class
 com\portfolio\lucas\Repository\IExperienciaRepo.class
 com\portfolio\lucas\Security\Entity\Rol.class
+com\portfolio\lucas\Interface\IAcercaDeS.class
 com\portfolio\lucas\Interface\IPersonaService.class
 com\portfolio\lucas\Security\Service\UserDetailsImp.class
 com\portfolio\lucas\Dto\AcercaDeData.class
