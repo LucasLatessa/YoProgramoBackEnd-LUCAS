@@ -20,8 +20,8 @@ import org.springframework.stereotype.Service;
 public class ImpAcercaDeS {
     @Autowired
     IAcercaDeRepo iAcercaDeRepo;
-    public Optional<AcercaDe> getOne(int id){
-        return iAcercaDeRepo.findById(id);
+    public Optional<AcercaDe> get(){
+        return iAcercaDeRepo.findById(1);
     }
 public void save(AcercaDe acercaDe){
         iAcercaDeRepo.save(acercaDe);
