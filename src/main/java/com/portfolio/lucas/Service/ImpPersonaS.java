@@ -5,41 +5,42 @@
 package com.portfolio.lucas.Service;
 
 import com.portfolio.lucas.Entity.Persona;
-import com.portfolio.lucas.Interface.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.portfolio.lucas.Repository.IPersonaRepo;
+import javax.transaction.Transactional;
 
 /**
  *
  * @author lucas
  */
 @Service
-public class ImpPersonaS implements IPersonaService{
-    @Autowired
-    IPersonaRepo ipersonaRepository;
-    @Override
-    public List<Persona> getPersona() {
-        List<Persona> persona= ipersonaRepository.findAll();
-        return persona;
-    }
-
-    @Override
-    public void savePersona(Persona persona) {
-        ipersonaRepository.save(persona);
-    }
-
-    @Override
-    public void deletePersona(int id) {
-    ipersonaRepository.deleteById(id);
-}
-
-    @Override
-    public Persona findPersona(int id) {
-        int idInt = Math.toIntExact(id);
-        Persona persona= ipersonaRepository.findById(idInt).orElse(null);
-        return persona;
+@Transactional
+public class ImpPersonaS  {
+    @Autowired IPersonaRepo rPersona;
+    
+   public List<Persona> list(){
+        return rPersona.findAll();
     }
     
+    public Persona getOne(int id){
+        Persona perso = rPersona.findById(id).orElse(null);
+        return perso;
+    }    
+   
+    
+    public void save(Persona pers){
+        rPersona.save(pers);
+    }      
+    
+   
+     public void delete(int id){
+        rPersona.deleteById(id);
+    }    
+     
+     public void edit(Persona pers){
+        rPersona.save(pers);
+    }  
+       
 }
