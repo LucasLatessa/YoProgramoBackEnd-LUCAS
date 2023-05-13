@@ -31,14 +31,13 @@ public class AcercaDeCont {
     ImpAcercaDeS acercaDeS;
     
     @GetMapping("/traer")
-    public AcercaDe get(){
-        AcercaDe acercaDe = acercaDeS.get().get();
-        return acercaDe;
+    public AcercaDe findPersona(){
+        return acercaDeS.findAcerca(1);
     }
     @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/update")
     public ResponseEntity<?> update( @RequestBody AcercaDeData dtoAcerca){
-        AcercaDe acercaDe = acercaDeS.get().get();
+        AcercaDe acercaDe = acercaDeS.findAcerca(1);
         acercaDe.setDescripcion((dtoAcerca.getDescripcion()));
         
         acercaDeS.save(acercaDe);
