@@ -31,25 +31,15 @@ public class Persona {
     
     @NotNull
     private String descripcion;
-    @Size(min = 1, max = 1000, message = "no cumple con la longitud")
-    private String acerca_de;
     private String img;
 
     public Persona() {
     }
 
-    public String getAcerca_de() {
-        return acerca_de;
-    }
 
-    public void setAcerca_de(String acerca_de) {
-        this.acerca_de = acerca_de;
-    }
-
-    public Persona(String nombre, String apellido, String descripcion,String acerca_de, String img) {
+    public Persona(String nombre, String apellido, String descripcion, String img) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.acerca_de= acerca_de;
         this.descripcion = descripcion;
         this.img = img;
     }
