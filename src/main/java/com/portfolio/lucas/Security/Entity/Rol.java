@@ -4,14 +4,13 @@
  */
 package com.portfolio.lucas.Security.Entity;
 
-import com.portfolio.lucas.Security.Enums.RolNombre;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
 
 /**
  *
@@ -23,13 +22,12 @@ public class Rol {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotNull
-    @Enumerated(EnumType.STRING)
-    private RolNombre rolNombre;
+    private String  rolNombre;
     
     public Rol() {
     }
 
-    public Rol(RolNombre rolNombre) {
+    public Rol(String  rolNombre) {
         this.rolNombre = rolNombre;
     }
     
@@ -41,11 +39,11 @@ public class Rol {
         this.id = id;
     }
 
-    public RolNombre getRolNombre() {
+    public String getRolNombre() {
         return rolNombre;
     }
 
-    public void setRolNombre(RolNombre rolNombre) {
+    public void setRolNombre(String rolNombre) {
         this.rolNombre = rolNombre;
     }
     

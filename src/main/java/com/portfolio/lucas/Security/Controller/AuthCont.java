@@ -9,11 +9,10 @@ import com.portfolio.lucas.Security.Dto.LoginUsuario;
 import com.portfolio.lucas.Security.Dto.NuevoUsuario;
 import com.portfolio.lucas.Security.Entity.Rol;
 import com.portfolio.lucas.Security.Entity.Usuario;
-import com.portfolio.lucas.Security.Enums.RolNombre;
 import com.portfolio.lucas.Security.Service.RolService;
 import com.portfolio.lucas.Security.Service.UsuarioService;
 import com.portfolio.lucas.Security.jwt.Provider;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.HashSet;
 import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,10 +65,10 @@ public class AuthCont {
             nuevoUsuario.getEmail(), passwordEncoder.encode(nuevoUsuario.getPassword()));
         
         Set<Rol> roles = new HashSet<>();
-        roles.add(rolService.getByRolNombre(RolNombre.ROLE_USER).get());
+        roles.add(rolService.getByRolNombre("ROLE_USER").get());
         
         if(nuevoUsuario.getRoles().contains("admin"))
-            roles.add(rolService.getByRolNombre(RolNombre.ROLE_ADMIN).get());
+            roles.add(rolService.getByRolNombre("ROLE_ADMIN").get());
         usuario.setRoles(roles);
         usuarioService.save(usuario);
         
