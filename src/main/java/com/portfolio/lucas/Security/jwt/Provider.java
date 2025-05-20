@@ -1,9 +1,3 @@
-/*
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.lucas.Security.jwt;
 
 import com.portfolio.lucas.Security.Entity.UsuarioPrincipal;
@@ -16,23 +10,17 @@ import io.jsonwebtoken.UnsupportedJwtException;
 import io.jsonwebtoken.security.Keys;
 import javax.crypto.SecretKey;
 import jakarta.annotation.PostConstruct;
-import java.util.Base64;
 import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
-/**
- *
- * @author lucas
- */
+
 @Component
 public class Provider {
     private final static Logger logger = LoggerFactory.getLogger(Provider.class);
     
-    @Value("${jwt.secret}")
-    private String secret;
     @Value("${jwt.expiration}")
     private int expiration;
 
@@ -40,8 +28,8 @@ public class Provider {
 
     @PostConstruct
     public void init() {
-        byte[] keyBytes = Base64.getDecoder().decode(secret);
-        key = Keys.hmacShaKeyFor(keyBytes);
+        // Genera una clave segura para HS512 automaticamente
+        key = Keys.secretKeyFor(SignatureAlgorithm.HS512);
     }
     
     public String generateToken(Authentication authentication){
@@ -49,7 +37,7 @@ public class Provider {
         return Jwts.builder().setSubject(usuarioPrincipal.getUsername())
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(new Date().getTime()+expiration*1000))
-                .signWith(key, SignatureAlgorithm.HS512)
+                .signWith(key)
                 .compact();
     }
     
@@ -71,7 +59,7 @@ public class Provider {
         }catch (IllegalArgumentException e){
             logger.error("Token vacio");
         }catch (SignatureException e){
-            logger.error("Firma no válida");
+            logger.error("Firma no valida");
         }
         return false;
     }
